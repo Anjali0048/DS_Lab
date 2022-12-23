@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<stdlib.h>
 
 //int stack
 int stack_int[25]; 
