@@ -12,9 +12,5 @@ int fact(int n){
 }
 
 int main(){
-    int n;
-    printf("enter n : ");
-    scanf("%d",&n);
-    printf("factorial is : %d\n",fact(n));
 }
 
