@@ -63,7 +63,7 @@ void display(){
    else{
       int i;
       printf("\nStack elements are:\n");
-      for(i=top; i>=0; i--)
+      for(i=0; i<=top; i++)
 	 printf("%d\n",stack[i]);
    }
 }
