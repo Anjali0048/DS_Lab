@@ -17,4 +17,3 @@ int main(){
     scanf("%d",&n);
     printf("factorial is : %d\n",fact(n));
 }
-

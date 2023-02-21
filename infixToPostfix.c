@@ -110,12 +110,11 @@ void convert(char infix[], char postfix[]){
     }
     postfix[j] = '\0';
     
-    
 }
 
 int main(){
     char postfix[25];
-    char infix[] = "(a+b)/c+d" ;
+    char infix[] = "((A + B) - C * (D / E)) + F" ;
     printf("given infix expression is : %s\n", infix);
     convert(infix,postfix);
     printf("postfix exp is : %s\n", postfix);  

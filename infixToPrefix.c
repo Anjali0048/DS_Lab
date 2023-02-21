@@ -130,7 +130,7 @@ void reverse(char infix[]){
 
 int main(){
     char prefix[25];
-    char infix[] =  "(a+b)/c+d";
+    char infix[] =  "(A - B/C) * (A/K-L)";
     printf("given infix expression is : %s\n", infix);
     reverse(infix);
     convert(infix,prefix);

@@ -26,5 +26,4 @@ int main(){
     int arr[8] = {1,3,5,7,9,13,26,48};
     printf("%d\n",binarySearch(arr,26,0,7));
        
-    
 }

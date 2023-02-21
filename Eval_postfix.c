@@ -1,5 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<math.h>
+#include<ctype.h>
 
 //int stack
 int stack_int[25]; 
@@ -14,7 +16,7 @@ char pop_int() {
 } 
 
 //evaluates postfix expression
-int evaluate(char *postfix){
+int evaluate(char postfix[]){
 
    char ch;
    int i = 0,operand1,operand2;
@@ -23,7 +25,8 @@ int evaluate(char *postfix){
 	
       if(isdigit(ch)) {
 	     push_int(ch-'0');  // Push the operand 
-      } else {
+      } 
+      else {
          //Operator,pop two  operands 
          operand2 = pop_int();
          operand1 = pop_int();
@@ -49,6 +52,6 @@ int evaluate(char *postfix){
 }
 
 void main() { 
-   char postfix[] = "456*+";
+   char postfix[] = "100 200 + 2 / 5 * 7 +";
    printf("Evaluated expression is: %d\n" , evaluate(postfix));
 } 
