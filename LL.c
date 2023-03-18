@@ -67,10 +67,10 @@ void randomInsert(){
             printf("can't insert\n");
             return;
         }
-        ptr -> next = temp -> next;
-        temp -> next = ptr;
-        printf("\nNode inserted");
     }
+    ptr -> next = temp -> next;
+    temp -> next = ptr;
+    printf("\nNode inserted");
 }
 
 void deleteFromHead(){
